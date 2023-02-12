@@ -8,6 +8,5 @@ $(document).ready(function(){
         // console.log(response);
         console.log(response);
         var newDiv = $('<img>');
-        $
     });
 });
