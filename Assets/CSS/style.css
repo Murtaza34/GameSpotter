@@ -57,6 +57,10 @@ h6 {
   font-size: 1.95rem;
 }
 
+.navbar-brand:hover {
+  color: #dddddd;
+}
+
 .nav-link {
   padding: 10px 10px;
   color: #949494;
@@ -64,7 +68,7 @@ h6 {
 }
 
 .nav-link:hover {
-  color: #ebebeb;
+  color: #f7b801;
 }
 
 .nav-item {
@@ -87,24 +91,24 @@ h6 {
 .header {
   color: #fff;
   line-height: 0.85;
-  font-size: 4.8rem;
+  font-size: 4.3rem;
   font-weight: bold;
   padding-top: 20px;
   position: absolute;
-  top: 220px;
+  top: 200px;
   left: 40%;
   right: 100px;
 }
 
 /* ----------------- Sub-header ---------------- */
 .sub-header {
-  color: #e2e482;
+  color: #f7b801;
   width: fit-content;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 450;
   padding-top: 20px;
   position: absolute;
-  top: 380px;
+  top: 340px;
   left: 40%;
   right: 100px;
 }
@@ -112,11 +116,8 @@ h6 {
 /*----- 1200px or less, the content will be... -----*/
 @media (max-width: 1200px) {
   .hero {
-    background: url(/Background-Image.jpg);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 50vh;
   }
   .header {
     font-size: 4.2rem;
@@ -138,8 +139,6 @@ h6 {
 /*----- 992px or less, the content will be... -----*/
 @media (max-width: 992px) {
   .hero {
-    background: url(/Background-Image.jpg);
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 50vh;
@@ -221,13 +220,27 @@ h6 {
 }
 
 .card-title {
-  color: #e2e482;
+  color: #f7b801;
 }
 
 .card-category {
   height: 63.5rem;
   border-radius: 10px;
   background-color: #12151b;
+  /* background-color: #191e30; */
+}
+
+.card {
+  height: 13rem;
+  background-color: #252550;
+  border-radius: 10px;
+}
+
+.game-cover {
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  width: 80%;
 }
 
 /* ------------------ Footer ------------------ */
