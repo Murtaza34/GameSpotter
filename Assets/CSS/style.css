@@ -90,6 +90,7 @@ h6 {
 /* ------------------ Header ------------------ */
 .header {
   color: #fff;
+  width: fit-content;
   line-height: 0.85;
   font-size: 4.3rem;
   font-weight: bold;
