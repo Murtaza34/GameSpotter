@@ -37,107 +37,299 @@
   </head>
   <body>
     <!-- -------------- Hero --------------- -->
-    <div class="hero">
-      <div class="overlay">
-        <div class="gradient">
-          <!-- ---------------- Navbar Logo ----------------- -->
-          <nav class="navbar navbar-expand-lg">
-            <div class="container mt-4 nav-container bg-dark">
-              <a class="navbar-brand px-2" href="index.html">GameSpotter</a>
-              <!-- -------------- Burger Icon -------------- -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- ---------------- Nav Bar ---------------- -->
-                <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Genres</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Platforms</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link me-3" href="#">Publishers</a>
-                  </li>
-                  <form class="d-flex align-items-center" role="search">
-                    <input
-                      type="search"
-                      id="user-input"
-                      class="form-control user-input"
-                      placeholder="Search for a game"
-                    />
-                    <button class="magnifying-glass-btn" type="submit">
-                      <i class="fa-solid fa-magnifying-glass mag-icon"></i>
-                    </button>
-                  </form>
-                </ul>
+    <header>
+      <div class="hero">
+        <div class="overlay">
+          <div class="gradient">
+            <!-- ---------------- Navbar Logo ----------------- -->
+            <nav class="navbar navbar-expand-lg">
+              <div class="container nav-container bg-dark mt-3">
+                <a class="navbar-brand px-2" href="#">GameSpotter</a>
+                <!-- -------------- Burger Icon -------------- -->
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon" id="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <!-- ---------------- Nav Bar ---------------- -->
+                  <ul class="navbar-nav ms-auto mb-3 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Genres</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Platforms</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link me-3" href="#">Publishers</a>
+                    </li>
+                    <form class="d-flex align-items-center" role="search">
+                      <input
+                        type="search"
+                        id="user-input"
+                        class="form-control user-input"
+                        placeholder="Search for a game"
+                      />
+                      <button class="magnifying-glass-btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass mag-icon"></i>
+                      </button>
+                    </form>
+                  </ul>
+                </div>
               </div>
+            </nav>
+            <!-- -------------- hero Content -------------- -->
+            <div class="hero-content">
+              <h1 class="header">
+                Lost in the <br />
+                world of gaming?
+              </h1>
+              <p class="sub-header">Let Us Help You Find Your Way</p>
             </div>
-          </nav>
-          <!-- -------------- hero Content -------------- -->
-          <div class="hero-content">
-            <h1 class="header">
-              Lost in the <br />
-              world of gaming?
-            </h1>
-            <p class="sub-header">Let Us Help You Find Your Way</p>
           </div>
         </div>
       </div>
-    </div>
+    </header>
     <!-- ---------- Game cards section ----------- -->
     <section class="games-section">
       <div class="container">
         <div class="row gap-5">
-          <div class="col-lg col-md-5 card-category p-3">
+          <!-- --------------- Column 1 ---------------- -->
+          <div class="col-lg col-md-5 card-category p-3 px-4">
             <div class="text-center">
               <h2 class="card-title pb-4">Popular</h2>
             </div>
-            <div class="card">
-              <div class="row">
-                <div class="col-md-4">
-                  <img src="./Assets/Images/Background-Image.jpg" class="game-cover" alt="..." />
+            <!-- ----------------- Game 1 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
                 </div>
-                <div class="col-md-8">
+                <div class="col-sm">
                   <div class="card-body">
-                    <h5 class="Game-title">Card title</h5>
-                    <p class="game-year">
-                      This is a wider card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 2 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 3 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 4 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 5 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col-lg col-md-6 card-category p-3">
+          <!-- --------------- Column 2 ---------------- -->
+          <div class="col-lg col-md-6 card-category p-3 px-4">
             <div class="text-center">
               <h3 class="card-title pb-4">Upcoming</h3>
             </div>
-            Column content...
+            <!-- ----------------- Game 1 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 2 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 3 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 4 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 5 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="col-lg col-md-6 card-category p-3">
+          <!-- --------------- Column 3 ---------------- -->
+          <div class="col-lg col-md-6 card-category p-3 px-4">
             <div class="text-center">
               <h3 class="card-title pb-4">Just Released</h3>
             </div>
-            Column content...
+            <!-- ----------------- Game 1 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 2 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 3 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 4 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ----------------- Game 5 ----------------- -->
+            <div class="card border-0 mb-4">
+              <div class="row g-0">
+                <div class="col-sm-5">
+                  <img src="" class="game-cover" alt="" />
+                </div>
+                <div class="col-sm">
+                  <div class="card-body">
+                    <h5 class="game-title" id="game-title"></h5>
+                    <p class="game-year" id="game-year"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
