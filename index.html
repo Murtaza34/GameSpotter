@@ -44,7 +44,7 @@
             <!-- ---------------- Navbar Logo ----------------- -->
             <nav class="navbar navbar-expand-lg">
               <div class="container nav-container bg-dark mt-3">
-                <a class="navbar-brand px-2" href="#">GameSpotter</a>
+                <a class="navbar-brand px-2" href="./index.html">GameSpotter</a>
                 <!-- -------------- Burger Icon -------------- -->
                 <button
                   class="navbar-toggler"
@@ -64,13 +64,13 @@
                       <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Genres</a>
+                      <a class="nav-link" href="genres.html">Genres</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Platforms</a>
+                      <a class="nav-link" href="./platforms.html">Platforms</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link me-3" href="#">Publishers</a>
+                      <a class="nav-link me-3" href="./publishers.html">Publishers</a>
                     </li>
                     <form class="d-flex align-items-center" role="search">
                       <input
@@ -109,16 +109,49 @@
               <h2 class="card-title pb-4">Popular</h2>
             </div>
             <!-- ----------------- Game 1 ----------------- -->
-            <div class="card border-0 mb-4">
-              <div class="row g-0">
-                <div class="col-sm-5">
-                  <img src="" class="game-cover" alt="" />
-                </div>
-                <div class="col-sm">
-                  <div class="card-body">
-                    <h5 class="game-title" id="game-title"></h5>
-                    <p class="game-year" id="game-year"></p>
+            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="card border-0 mb-4">
+                <div class="row g-0">
+                  <div class="col-sm-5">
+                    <img src="" class="game-cover" alt="" />
                   </div>
+                  <div class="col-sm">
+                    <div class="card-body">
+                      <h5 class="game-title" id="game-title"></h5>
+                      <p class="game-year" id="game-year"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime necessitatibus
+                    recusandae reprehenderit? Nam aperiam praesentium assumenda repellat? Omnis
+                    corrupti veritatis nesciunt quisquam fuga beatae maiores dolor? Dolorem
+                    accusantium sit aliquam.
+                  </div>
+                  <video class="p-3" width="500" controls autoplay muted loop>
+                    <source src=" myVideo.mp4" type="video/mp4" />
+                  </video>
                 </div>
               </div>
             </div>
@@ -334,9 +367,12 @@
         </div>
       </div>
     </section>
-
+    <!-- ---------------- Footer ----------------- -->
     <footer>
-      <p class="foot-txt">Copyright © 2023 | Murtaza Mohebi</p>
+      <p class="foot-txt">
+        Copyright © 2023 | Murtaza Mohebi | Powered by
+        <a href="https://rawg.io/" target="_blank">rawg.io</a>
+      </p>
     </footer>
 
     <!-- ------------- Bootstrap JS -------------- -->
@@ -349,6 +385,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <!-- -------------- Customs JS --------------- -->
-    <script src="./app.js"></script>
+    <script src="/Assets/JS/app.js"></script>
   </body>
 </html>
