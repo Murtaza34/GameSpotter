@@ -34,7 +34,7 @@ $(document).ready(function () {
           //console.log(response);
           var videoGameId = response.results[0].data[480];
           //console.log('video link is:', videoGameId);
-          const gameVideo = $(".game-video");
+          const gameVideo = $("#modal-game-video");
           var gvid = gameVideo.attr("src", videoGameId);
           //console.log('Video', gvid);
           // gameVideo.append(videoGameId);
